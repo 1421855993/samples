@@ -99,6 +99,7 @@ class WebGPUTransform { // eslint-disable-line no-unused-vars
     });
 
     this.renderPipeline_ = device.createRenderPipeline({
+      layout: "auto",
       vertex: {
         module: device.createShaderModule({
           code: wgslShaders.vertex,
